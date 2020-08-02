@@ -1,0 +1,10 @@
+QTextEdit{
+    border-style:none;
+    padding:1px;
+    border-radius:1px;
+    border:0px solid #DCE4EC;
+}
+
+QTextEdit:focus{
+    border:1px solid #3498DB;}
+/*3, 1, "#DCE4EC", "#3498DB"*/

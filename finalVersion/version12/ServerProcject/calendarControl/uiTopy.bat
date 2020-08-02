@@ -1,0 +1,1 @@
+@pyuic5 -o calendarWidget_ui.py calendarWidget.ui

@@ -1,0 +1,25 @@
+/*标题栏*/
+TitleBar {
+    background-color: rgb(100,100,100);
+}
+/*最小化最大化关闭按钮通用默认背景*/
+#buttonMinimum,#buttonMaximum,#buttonClose {
+    border: none;
+    background-color: rgb(100,100,100);
+}
+/*悬停*/
+#buttonMinimum:hover,#buttonMaximum:hover {
+    background-color: rgb(100,100,100);
+    color: white;
+}
+#buttonClose:hover {
+    color: white;
+}
+/*鼠标按下不放*/
+#buttonMinimum:pressed,#buttonMaximum:pressed {
+    background-color: rgb(87, 87, 87);
+}
+#buttonClose:pressed {
+    color: white;
+    background-color: rgb(87, 87, 87);
+}

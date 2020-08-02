@@ -1,0 +1,52 @@
+QTimeEdit:focus{
+    border:1px solid #B6B6B6;
+}
+
+QTimeEdit{
+    border:1px solid #B6B6B6;
+    border-radius:3px;
+    padding:2px;
+    background:none;
+    selection-background-color:#00BB9E;
+    selection-color:#FFFFFF;
+}
+
+QTimeEdit::up-button,QDateEdit::up-button,QDateTimeEdit::up-button,QDoubleSpinBox::up-button,QSpinBox::up-button{
+    image:url("image/add_top.png");
+    width:10px;
+    height:10px;
+    padding:2px 5px 0px 0px;
+}
+    
+QTimeEdit::down-button,QDateEdit::down-button,QDateTimeEdit::down-button,QDoubleSpinBox::down-button,QSpinBox::down-button{
+    image:url("image/add_bottom.png");
+    width:10px;
+    height:10px;
+    padding:0px 5px 2px 0px;
+}
+    
+QTimeEdit::up-button:pressed,QDateEdit::up-button:pressed,QDateTimeEdit::up-button:pressed,QDoubleSpinBox::up-button:pressed,QSpinBox::up-button:pressed{
+    top:-2px;
+}
+      
+QTimeEdit::down-button:pressed,QDateEdit::down-button:pressed,QDateTimeEdit::down-button:pressed,QDoubleSpinBox::down-button:pressed,QSpinBox::down-button:pressed,QSpinBox::down-button:pressed{
+    bottom:-2px;
+}
+    
+QTimeEdit[calendarPopup="true"]::down-arrow{
+    image:url("image/add_bottom.png");
+    width:10px;
+    height:10px;
+    right:2px;
+}
+
+QTimeEdit::drop-down{
+    subcontrol-origin:padding;
+    subcontrol-position:top right;
+    width:15px;
+    border-left-width:0px;
+    border-left-style:solid;
+    border-top-right-radius:3px;
+    border-bottom-right-radius:3px;
+    border-left-color:#B6B6B6;
+}

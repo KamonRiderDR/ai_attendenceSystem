@@ -1,0 +1,17 @@
+QRadioButton::indicator{
+    border-radius:8px;
+    width: 16px;
+    height: 16px;
+}
+
+QRadioButton::indicator::unchecked{
+    background:qradialgradient(
+        spread:pad,cx:0.5,cy:0.5,radius:0.5,fx:0.5,fy:0.5,stop:0.6 #FFFFFF,stop:0.7 #FFB6C1);
+}
+
+QRadioButton::indicator::checked{
+    background:qradialgradient(spread:pad,cx:0.5,cy:0.5,radius:0.5,fx:0.5,fy:0.5,
+    stop:0 #3498DB,stop:0.3 #3498DB,stop:0.4 #FFFFFF,stop:0.6 #FFFFFF,stop:0.7 #3498DB);
+}
+
+/* 8, "#D7DBDE", "#3498DB" */

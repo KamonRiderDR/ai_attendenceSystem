@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Proc_StaffInfo</class>
+ <widget class="QWidget" name="Proc_StaffInfo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1126</width>
+    <height>788</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="layout_main" columnstretch="5,3">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="layout_leftshow" stretch="3,2">
+     <item>
+      <widget class="QWidget" name="widget_stafftable_container" native="true">
+       <layout class="QGridLayout" name="layout_widgetStaffTableContainer">
+        <item row="1" column="0">
+         <widget class="QTableView" name="tableView"/>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_staffTableTitle">
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei UI</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>员工考勤数据:</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="widget_totalData_container" native="true">
+       <layout class="QGridLayout" name="layout_widgetStaffInfoContainer" columnstretch="5,2">
+        <item row="0" column="0">
+         <widget class="QWidget" name="widget_totalHistoryChart" native="true"/>
+        </item>
+        <item row="0" column="1">
+         <widget class="QWidget" name="widget_totalData" native="true"/>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="1">
+    <layout class="QVBoxLayout" name="layout_right" stretch="1,12,3">
+     <item>
+      <layout class="QHBoxLayout" name="layout_searchshow">
+       <item>
+        <widget class="QLineEdit" name="lineEditSearch"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_search">
+         <property name="font">
+          <font>
+           <family>Microsoft YaHei UI</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>搜索</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QWidget" name="widget_staffData_container" native="true">
+       <layout class="QGridLayout" name="layout_widgetStaffDataContainer">
+        <item row="0" column="0">
+         <widget class="QWidget" name="widget_showStaffHistoryChart" native="true"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QWidget" name="widget_showStaffDataNum" native="true"/>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="widget_opbtn_container" native="true">
+       <layout class="QVBoxLayout" name="layout_widgetOpbtnContainer">
+        <item>
+         <widget class="QPushButton" name="btn_showStaffAddWin">
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei UI</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>添加员工</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEditDeleteID"/>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="layout_btnDelete">
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButtonDelete">
+            <property name="font">
+             <font>
+              <family>Microsoft YaHei UI</family>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>删除员工</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

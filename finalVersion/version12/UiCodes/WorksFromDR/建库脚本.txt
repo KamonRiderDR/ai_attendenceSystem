@@ -1,0 +1,12 @@
+CREATE TABLE workingday(
+date varchar(20),
+isWorkingDay INT
+);
+
+CREATE TABLE workingtime(
+startTime varchar(20),
+endTime varchar(20)
+);
+
+
+);

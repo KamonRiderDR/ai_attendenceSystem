@@ -1,0 +1,53 @@
+/*QCalendarWidget*/
+QCalendarWidget{
+    background-color: #fff;
+}
+
+QCalendarWidget QToolButton {
+  	height: 60px;
+  	color: white;
+  	font-size: 18px;
+    font-weight: 700;
+  	icon-size: 20px, 20px;
+    background-color: #3bafda;
+}
+
+QCalendarWidget QToolButton:hover{
+    border: transparent;
+}
+
+QCalendarWidget QToolButton:pressed{
+    border: transparent;
+    background-color: #4fc1e9;
+}
+
+QCalendarWidget QToolButton#qt_calendar_prevmonth{
+    qproperty-icon: url('%PATH%/img/arrow-left.png');
+}
+
+QCalendarWidget QToolButton#qt_calendar_nextmonth{
+    qproperty-icon: url('%PATH%/img/arrow-right.png');
+}
+
+QCalendarWidget QToolButton#qt_calendar_monthbutton::menu-indicator{
+    background-color: #3bafda;
+}
+
+QCalendarWidget QToolButton#qt_calendar_monthbutton::menu-indicator:pressed{
+    background-color: #4fc1e9;
+}
+
+QCalendarWidget QWidget {
+    alternate-background-color: #FFFFFF;
+}
+
+QCalendarWidget QWidget#qt_calendar_navigationbar {
+    background-color: #3bafda;
+}
+
+QCalendarWidget QAbstractItemView {
+    padding: 11px;
+	font-size:14px;
+    outline: none;
+    selection-color: #FFF;
+}
